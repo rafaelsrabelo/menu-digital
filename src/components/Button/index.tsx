@@ -1,5 +1,4 @@
 import { ButtonTypeStyleProps, Container } from "./styles";
-
 interface Props {
   title: string;
   type?: any;

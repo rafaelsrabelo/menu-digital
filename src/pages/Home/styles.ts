@@ -22,7 +22,7 @@ export const Title = styled.h1`
 `
 
 export const Subtitle = styled.p`
-  font-size: 0.975rem;
+  font-size: 1rem;
   line-height: 25px;
   color: #777;
 `
@@ -43,7 +43,7 @@ export const Information = styled.section`
   }
 
   p {
-    font-size: .8rem;
+    font-size: 1rem;
     color: #777
   }
 `

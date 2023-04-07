@@ -19,7 +19,7 @@ export function Header() {
         </div>
         <div className="d-flex align-items-center">
           <BsCart size={24} />
-          <span className="badge text-bg-danger">4</span>
+          <span className="badge text-bg-danger">0</span>
         </div>
       </div>
     </Container>
