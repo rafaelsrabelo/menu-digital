@@ -13,7 +13,24 @@ export const Container = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 54px;
+  height: 54px;
   object-fit: cover;
-`;
+`
+export const HeaderContentLinks = styled.div`
+
+  a {
+    color: ${props => props.theme.COLORS.TEXT};
+    font-weight: 700;
+  }
+
+  .products-link {
+    margin: 0 25px;
+  }
+` 
+export const HeaderContentIcons = styled.div`
+  .cart-icon {
+    margin-right: 20px;
+  }
+`
+;
