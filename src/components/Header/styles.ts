@@ -2,10 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: ${props => props.theme.COLORS.WHITE};
-  
-  /* height: 100px; */
-  /* padding:  */
-  box-shadow: 5px 5px 15px -5px #fde4e4;
+  padding: 30px 0;
+  span {
+    background: ${props => props.theme.COLORS.RED_500};
+    color: ${props => props.theme.COLORS.WHITE};
+    padding: 1px;
+    border-radius: 50%;
+  }
 `;
 
 export const Image = styled.img`
@@ -24,12 +27,9 @@ export const HeaderContentLinks = styled.div`
     }
     &.active {
       color: ${props => props.theme.COLORS.RED_500};
+      border-bottom: 1px solid ${props => props.theme.COLORS.RED_500};
     }
   }
 ` 
-export const HeaderContentIcons = styled.div`
-  .cart-icon {
-    margin-right: 20px;
-  }
-`
+
 ;

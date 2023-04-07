@@ -1,29 +1,27 @@
-import { Container, Image, HeaderContentLinks, HeaderContentIcons } from "./styles";
-import { NavLink, NavLinkProps  } from "react-router-dom";
+import { Container, Image, HeaderContentLinks } from "./styles";
+import { NavLink } from "react-router-dom";
 import logo from "./../../assets/img/logomarca.png";
-import { BsCart, BsPerson } from "react-icons/bs"
-
+import { BsCart } from "react-icons/bs";
 
 export function Header() {
   return (
-    <Container className="">
-      <div className="container d-flex justify-content-between align-items-center py-4">
-        <div>
-          <Image src={logo} />
+    <Container className="navbar">
+      <div className="container">
+        <div className="d-flex align-items-center">
+          <NavLink to="/" className="me-4">
+            <Image src={logo} />
+          </NavLink>
+          <HeaderContentLinks>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/products">Produtos</NavLink>
+            <NavLink to="/cart">Carrinho</NavLink>
+          </HeaderContentLinks>
         </div>
-
-        <HeaderContentLinks>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/products" className="products-link">Products</NavLink>
-          <NavLink to="/cart">Cart</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
-        </HeaderContentLinks>
-
-        <HeaderContentIcons>
-          <BsCart size={24} className="cart-icon"/>
-          <BsPerson size={24} />
-        </HeaderContentIcons>
+        <div className="d-flex align-items-center">
+          <BsCart size={24} />
+          <span className="badge text-bg-danger">4</span>
+        </div>
       </div>
     </Container>
-  )
+  );
 }
